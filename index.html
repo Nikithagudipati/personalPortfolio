@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>-->
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#skills" style="--i:3">Skills</a>
+            <a href="#projects" style="--i:4">Projects</a>
+            <a href="#resume" style="--i:5">Resume</a>
+            <a href="#contact" style="--i:6">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello,It's me</h3>
+            <h1>Nikitha Gudipati</h1>
+            <h3>and I'm an</h3>
+            <p>Engineering student who is dedicated and more reliable with strong time management skills and eager to
+                learn new skills and embrace challenges.</p>
+            <div class="home-sci">
+                <a href="https://linkedin.com/in/nikitha-gudipati-9614b9303" target="_blank" style="--i:7"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&to=nikithagudipati@gmail.com" target="_blank" --i:8"><i
+                        class='bx bxl-gmail'></i></a>
+
+            </div>
+            <a href="#about" class="btn-box">More About Me</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+
+
+        <div class="about-text">
+            <h2>About<span>Me</span></h2>
+
+            <p>I'm a student at Sri Indu College of Engineering and Technology ,
+                Hyderabad, pursuing a B.Tech in Artificial Intelligence and Data Science.
+                I am passionate about learning new technologies and applying them to real-world
+                problems. I am good at programming languages such as C, Java and Python,
+                and I am currently exploring web development and data science.
+                In my free time, I enjoy drawing and spending time with my family and friends.</p>
+
+            <h1>To Know More..</h1>
+        </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+        <h1>My<span>Skills</span></h1>
+
+        <div class="skills-wrapper">
+            <div class="skill-category">
+                <div class="skill-category">
+                    <h2>Technical Skills</h2>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="progress-container">
+                            <div class="percentage-label">0%</div>
+                            <div class="progress-bar" data-skill="85">
+                                <div class="bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="progress-container">
+                            <div class="percentage-label">0%</div>
+                            <div class="progress-bar" data-skill="75">
+                                <div class="bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="progress-container">
+                            <div class="percentage-label">0%</div>
+                            <div class="progress-bar" data-skill="70">
+                                <div class="bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="progress-container">
+                            <div class="percentage-label">0%</div>
+                            <div class="progress-bar" data-skill="85">
+                                <div class="bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="progress-container">
+                            <div class="percentage-label">0%</div>
+                            <div class="progress-bar" data-skill="70">
+                                <div class="bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <div class="skill-category">
+                    <h2>Professional Skills</h2>
+                    <div class="skill">
+                        <span>Communication</span>
+                        <div class="progress-container">
+                            <div class="percentage-label">0%</div>
+                            <div class="progress-bar" data-skill="90">
+                                <div class="bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creativity</span>
+                        <div class="progress-container">
+                            <div class="percentage-label">0%</div>
+                            <div class="progress-bar" data-skill="80">
+                                <div class="bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Problem Solving</span>
+                        <div class="progress-container">
+                            <div class="percentage-label">0%</div>
+                            <div class="progress-bar" data-skill="75">
+                                <div class="bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Team Work</span>
+                        <div class="progress-container">
+                            <div class="percentage-label">0%</div>
+                            <div class="progress-bar" data-skill="85">
+                                <div class="bar-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const skillSection = document.querySelector('.skills-section');
+            const bars = document.querySelectorAll('.progress-bar');
+    
+            // Reset all bars to 0% width and label
+            function resetSkills() {
+                bars.forEach(bar => {
+                    const fill = bar.querySelector('.bar-fill');
+                    fill.style.transition = 'none'; // temporarily remove transition
+                    fill.style.width = '0%';
+                    bar.previousElementSibling.textContent = '0%';
+                });
+            }
+    
+            // Animate the bars to their set percentages
+            function animateSkills() {
+                bars.forEach(bar => {
+                    const fill = bar.querySelector('.bar-fill');
+                    const percentage = bar.getAttribute('data-skill');
+                    const label = bar.previousElementSibling;
+    
+                    // Re-enable transition
+                    fill.style.transition = 'width 1s ease-in-out';
+                    setTimeout(() => {
+                        fill.style.width = `${percentage}%`;
+                        label.textContent = `${percentage}%`;
+                    }, 100); // small delay to ensure reset is visible
+                });
+            }
+    
+            // Intersection Observer to trigger animation when in view
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        resetSkills();
+                        setTimeout(animateSkills, 150); // wait a bit after reset
+                    }
+                });
+            }, {
+                threshold: 0.5
+            });
+    
+            observer.observe(skillSection);
+        });
+    </script>
+    
+    
+
+
+    <section id="projects" class="projects-section">
+        <h1>My<span>Projects</span></h1>
+
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-title">Crop-Vista</div>
+                <div class="project-description">
+                    This Project sought to predict crop yield based on certain attributes such as crop,<br> pH, Rainfall,
+                    etc,
+                    also suggests some high yield crops for those conditions.
+                </div>
+
+                <a href="https://github.com/Nikithagudipati/Crop-Vista" class="project-link" target="_blank">View
+                    Project</a>
+            </div>
+
+
+
+
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll(".project-card");
+
+            const observer = new IntersectionObserver(
+                entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                        }
+                    });
+                },
+                {
+                    threshold: 0.2,
+                }
+            );
+
+            cards.forEach(card => {
+                card.classList.add("hidden");
+                observer.observe(card);
+            });
+        });
+    </script>
+    <section id="resume" class="resume-section">
+        <h1>My<span>Resume</span></h1>
+
+        <div class="resume-box">
+            <p>You can view or download my resume below:</p>
+
+            <div class="resume-buttons">
+                <a href="https://drive.google.com/file/d/1NT-2hJ2FhMiJi_t-cnVKrnGLUZ2cu9yp/view?usp=sharing"
+                    target="_blank" class="resume-download-btn">View Resume</a>
+                <a href="https://drive.google.com/file/d/1NT-2hJ2FhMiJi_t-cnVKrnGLUZ2cu9yp/view?usp=sharing" download
+                    class="resume-download-btn">Download Resume</a>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <h1>Contact<span>Me</span></h1>
+
+        <div class="contact-container">
+            <form class="contact-form" id="contact-form">
+                <input type="text" name="user_name" placeholder="Your Name" required />
+                <input type="email" name="user_email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+
+            <div class="social-links">
+                <a href="" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://linkedin.com/in/nikitha-gudipati-9614b9303" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&to=nikithagudipati@gmail.com" target="_blank"><i
+                        class='bx bxl-gmail'></i></a>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("9-gM80FCBWamJ7f7s"); // Replace with your EmailJS Public Key
+        })();
+
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm("service_z437z2s", "template_hkcmkzl", this).then(
+                () => {
+                    alert("Message sent successfully!");
+                    this.reset();
+                },
+                (error) => {
+                    alert("Failed to send message. Please try again later.");
+                    console.error("EmailJS error:", error);
+                }
+            );
+        });
+    </script>
+    <footer class="footer">
+        <p>© 2025 Your Name. All rights reserved.</p>
+        <div class="footer-icons">
+            <a href="" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/nikitha-gudipati-9614b9303" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&to=nikithagudipati@gmail.com"><i
+                    class="fas fa-envelope"></i></a>
+            <button id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+        </div>
+    </footer>
+    <script>
+        const backToTopBtn = document.getElementById("backToTopBtn");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        backToTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+
+</body>
+
+</html>
